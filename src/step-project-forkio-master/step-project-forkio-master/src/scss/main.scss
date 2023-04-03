@@ -1,0 +1,28 @@
+@import './mixins';
+@import './vars';
+
+    @media screen and (min-width: 1200px) {
+      .wrap {
+        padding: 0;
+        max-width: 1200px;
+      }
+    }
+
+    .wrap {
+      padding-left: 12px;
+      padding-right: 12px;
+      margin: 0 auto;
+    }
+
+
+
+
+
+
+
+@import 'content/header';
+@import 'content/header-main-section';
+@import 'content/advantages-section';
+@import 'content/comments-section';
+@import 'content/pricing-plan';
+

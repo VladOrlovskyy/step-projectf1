@@ -1,0 +1,284 @@
+.thickness {
+
+  font-weight: lighter;
+}
+  &_title {
+
+    font-size: 28px;
+    color: #fff;
+    @include margin-bottom(27px);
+    font-family: $font-Montserrat;
+    font-weight: bold;
+
+  }
+
+.fork_pricing {
+
+  background-image:url(../images/pricing-section/pricing-bg.png) ;
+  background-size: cover;
+
+  &_wrap {
+
+    padding-top: 14px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+
+  &_content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_item_header {
+
+    padding-top: 32px;
+    padding-bottom: 35px;
+    background: rgba(256, 256, 256, 0.06);
+
+    &_active {
+      background: rgba(0, 0, 0, 0.11);
+    }
+  }
+  &_item_title {
+
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+  }
+  &_item_main {
+
+    padding-top: 30px;
+    height: 360px;
+    background: rgba(256, 256, 256, 0.11);
+    &--active {
+      background: rgba(70, 48, 72, 0.84);
+
+    }
+  }
+
+    &_content_block {
+
+      font-family: $font-Montserrat;
+      @include margin-bottom(52px);
+      width: 256px;
+      color: #ffffff;
+      font-weight: 300;
+
+
+      &_active {
+
+        transform: scaleX(1.08) scaleY(1.1);
+
+      }
+    }
+
+  &_item_price {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    @include margin-bottom(20px);
+
+    &_active {
+
+      font-size: 92px;
+
+    }
+  }
+  &_item_duration {
+
+    font-size: 14px;
+    text-transform: uppercase;
+    @include margin-bottom(38px);
+    margin-top: 20px;
+
+  }
+  &_item_separator {
+
+    width: 30%;
+    height: 5px;
+    background: #8d81ac;
+    margin: 0 auto;
+    @include margin-bottom(30px);
+
+  }
+  &_item_license {
+
+    font-size: 16px;
+    height: 48px;
+    @include margin-bottom(37px);
+
+  }
+  &_item_button {
+
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    background: rgba(256, 256, 256, 0.06);
+    border-radius: 24px;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 30px;
+
+    &_active {
+
+      font-size: 17px;
+      padding: 18px 48px;
+
+    }
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+
+  .fork_pricing {
+
+    &_wrap {
+
+      padding-top: 80px;
+
+      padding-bottom: 90px;
+
+    }
+    &_title {
+
+      @include margin-bottom(52px);
+
+    }
+    &_content {
+
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      margin: 0 auto;
+
+    }
+    &_content_block {
+
+      margin-right: 0;
+      width: 23%;
+
+    }
+    &_item_main {
+
+      height: 360px;
+
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 480px) {
+  .fork_pricing {
+
+    &_wrap {
+
+      padding-top: 90px;
+      padding-bottom: 94px;
+
+    }
+
+    &_title {
+
+      font-size: 42px;
+
+    }
+
+    &_content {
+
+      display: flex;
+      flex-wrap: wrap;
+      width: 74%;
+      justify-content: space-around;
+      margin: 0 auto;
+
+    }
+
+    &_content_block {
+
+      @include margin-bottom(71px);
+
+    }
+  }
+}
+
+@media screen and (min-width: 612px) {
+
+  .fork_pricing {
+
+    &_content {
+
+      flex-direction: row;
+
+    }
+    &_content_block {
+
+      &_active {
+
+        transform-origin: right;
+
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 989px) {
+
+  .fork_pricing {
+
+    &_content_block {
+
+      &_active {
+
+        transform-origin: center;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+  .fork_pricing {
+
+      &_item_title {
+
+        font-size: 25px;
+
+      }
+
+    &_title {
+
+      font-size: 50px;
+    }
+
+    &_item_license {
+
+      font-size: 12px;
+
+    }
+
+    &_item_button {
+
+      font-size: 15px;
+      padding: 15px 35px;
+
+    }
+
+
+    &_item_price {
+
+      font-size: 55px;
+
+    }
+
+
+  }
+}

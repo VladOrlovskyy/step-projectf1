@@ -1,0 +1,312 @@
+
+
+.header{
+    background-image: url(../images/header/headerBackground.png);
+    box-sizing: border-box;
+    position:relative;
+    background-position-x: center;
+    font-family:'Montserrat', sans-serif;
+    text-align:center;
+
+    &_buy_button {
+
+            padding:11px 31px 12px 30px;
+            border:none;
+            color:white;
+            background-color: $main-color;
+            font-weight: bold;
+            text-transform: capitalize;
+            box-sizing:border-box;
+            border-radius:38px;
+
+        }
+
+    &_top_header {
+
+            background-color: #27262A;
+            padding:40px 12px;
+            display: flex;
+            justify-content: space-between;
+
+    }
+
+
+    &_download {
+
+            padding:11px 31px 12px 30px;
+            text-transform: capitalize;
+            box-sizing:border-box;
+            border-radius: 38px;
+            border: none;
+            color: white;
+            background-color: $main-color;
+            font-weight: bold;
+
+
+        }
+
+    &_menu{
+        position:absolute;
+        width:calc(100% - 22px);
+        background:#333333;
+        top:127px;
+        left:11px;
+
+        &_hidden {
+            display:none;
+        }
+        
+        
+        &_section{
+            text-align:left;
+            border:1px solid #3B3B3B;
+            list-style-type: none;
+                        padding:24px 39px;
+
+            &:focus, &:active {
+
+                & .header_menu_link {
+
+                    color: $main-color;
+
+                }
+
+                border-left:7px solid $main-color;
+            }
+        } 
+
+        &_button {
+
+            border:none;
+            outline:none;
+            background: transparent;
+
+        }
+
+        &_icon {
+
+            width:20px;
+            height:20px;
+
+            &_hidden {
+
+                display:none;
+
+            }
+        }
+
+        &_link {
+
+            color:white;
+            font-size:25px;
+            text-decoration:none;
+            text-transform: capitalize;
+        }
+    }
+
+    &_title {
+        padding-top:52px;
+        padding-bottom:22px;
+        color:white;
+        font-size:50px;
+        font-weight: bold;
+        text-transform: capitalize;
+
+    }
+
+
+    &_description {
+
+        padding-bottom:20px;
+        line-height:24px;
+        font-size:18px;
+        font-family:'lato', sans-serif;
+        color: #8D81AC;
+
+
+    }
+
+    &_version {
+
+        padding-bottom:400px;
+        font-size:15px;
+        color:#848E97;
+        text-transform: uppercase;
+
+    }
+
+    &_download_button {
+
+        top:30px;
+        position:relative;
+
+    }
+
+    &_unlimited {
+
+        top:37px;
+        font-size:15px;
+        color:#848E97;
+        position:relative;
+    }
+}
+
+
+.logo_title{
+    display:none;
+    font-size:24px;
+    font-weight:bold;
+    color:$main-color;
+    text-transform: uppercase;
+    margin-left:20px;
+}
+
+@media (min-width:480px) {
+
+    .header {
+
+        &_logo {
+            display:flex;
+            align-items:center; 
+            text-decoration:none;
+
+        }
+
+        &_top_header {
+
+            padding:20px 10px 60px 10px;
+        }
+
+        &_menu {
+
+            max-width:500px;
+            margin:0 auto;
+            top:-40px;
+            display:flex;
+            justify-content:space-between;
+            position: relative;
+            background:none;
+
+
+            &_hidden {
+                visibility:visible;
+            }
+            &_button {
+                display:none;
+            }
+
+            &_item {
+                padding:0;
+                border:0;
+
+                &:focus, &:active {
+
+                       border-left:none;
+
+                    & .header_menu_link {
+
+                        color: $main-color;
+                    }
+                }
+            }
+
+            &_link {
+
+                font-size:15px;
+                font-weight:bold;
+                color:$main-color;
+            }
+        }
+
+        &_title{
+            font-size:70px;
+        }
+
+        &_description{
+            font-size:24px;
+        }
+
+        &_download_button {
+
+            font-size:20px;
+            padding:21px 65px 20px 60px;
+            top:45px;
+        }
+
+        &_unlimited{
+            top:55px;
+        }
+
+    }
+
+    .logo_title{
+        display:block;
+    }
+}
+
+@media (min-width:992px) {
+
+    .header {
+
+        &_top_header {
+            padding:30px 90px;
+            background:transparent;
+        }
+
+        &_logo {
+
+            &:hover {
+
+                & .logo_title {
+                    color:white;
+                }
+            }
+        }
+
+        &_menu {
+
+            width:38%;
+            top:-50px;
+            cursor:pointer;
+            left:calc(50% / 2 - 180px );
+
+            &_item {
+
+                &:hover{
+
+                    & .header_menu_link {
+
+                        color: white;
+
+                    }
+            }
+        }
+    }
+
+        &_title {
+
+            font-size:82px;
+
+        }
+
+        &_description {
+
+            font-size:30px;
+
+        }
+
+        &_buy_button, &_download_button {
+
+            &:hover {
+
+                background:white;
+                color:#8D81AC;
+                border:1px solid $main-color;
+
+            }
+        }
+    }
+
+
+}
+

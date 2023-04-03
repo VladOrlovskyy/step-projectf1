@@ -1,0 +1,106 @@
+body {
+line-height:1;
+}
+
+nav ul {
+list-style:none;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin:0;
+  padding:0;
+  background:0 0;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  font-size:100%;
+}
+
+hr {
+border-top: 1px solid #ccc;
+padding:0
+height:1px;
+border:0;
+margin:1em 0;
+display:block
+}
+
+a {
+margin:0;
+font-size:100%;
+vertical-align:baseline;
+background:0 0;
+padding:0
+}
+
+article, aside, details, figcaption,
+figure, footer, header, hgroup,
+menu, nav, section{
+display:block
+}
+
+    del {
+    text-decoration:line-through;
+    }
+
+    abbr[title], dfn[title]{
+    border-bottom:1px dotted;
+    cursor:help;
+    }
+
+    table {
+    border-collapse:collapse;
+    border-spacing:0;
+    }
+
+    ins {
+    text-decoration:none;
+    background-color:#ff9;
+    color:#000;
+
+    }
+
+
+    blockquote, q {
+
+    quotes:none;
+
+    }
+
+    blockquote:after, blockquote:before,q:after,q:before {
+
+    content:'';
+    content:none;
+
+    }
+
+    mark {
+
+    font-style:italic;
+    font-weight:700;
+    background-color:#ff9;
+    color:#000;
+
+    }
+
+    input, select {
+
+    vertical-align:middle;
+
+    }
+
+
+aside, audio, cite,
+code, dd, del, details, dfn, div, dl, dt, em, address,  html, i, iframe, article, figure, footer,
+form, header, b, canvas, caption, hgroup, img, ins, kbd, label, body, li, mark, menu, nav, fieldset,
+ figcaption, object, abbr, legend, blockquote, ol, p, pre, q, samp, tbody, td, tfoot, section, small, span, strong,
+sub, summary, sup, table, th, thead, time, tr, ul, var, video {
+
+background:0 0;
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+}
